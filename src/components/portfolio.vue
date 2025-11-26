@@ -93,13 +93,13 @@
 
         <section id="technologie">
             <ul class="bloc-icones">
-                <li><a href="#code">HTML <img src="@/assets/image/html.png" alt="Logo HTML"></a></li>
-                <li><a href="#code">CSS <img src="@/assets/image/css.png" alt="Logo CSS"></a></li>
-                <li><a href="#code">React <img src="@/assets/image/react.png" alt="Logo React"></a></li>
-                <li><a href="#code">Vue.JS <img src="@/assets/image/vuejs.png" alt="Logo Vue.JS"></a></li>
-                <li><a href="#vmware">VmWare <img src="@/assets/image/vmware.png" alt="Logo VmWare"></a></li>
-                <li><a href="#windows">Windows<img src="@/assets/image/windows.png" alt="Logo Windows"></a></li>
-                <li><a href="#reseau">Linux<img src="@/assets/image/linux.png" alt="Logo Linux"></a></li>
+                <li><a href="#code">HTML <img src="@/assets/html.png" alt="Logo HTML"></a></li>
+                <li><a href="#code">CSS <img src="@/assets/css.png" alt="Logo CSS"></a></li>
+                <li><a href="#code">React <img src="@/assets/react.png" alt="Logo React"></a></li>
+                <li><a href="#code">Vue.JS <img src="@/assets/vuejs.png" alt="Logo Vue.JS"></a></li>
+                <li><a href="#vmware">VmWare <img src="@/assets/vmware.png" alt="Logo VmWare"></a></li>
+                <li><a href="#windows">Windows<img src="@/assets/windows.png" alt="Logo Windows"></a></li>
+                <li><a href="#reseau">Linux<img src="@/assets/linux.png" alt="Logo Linux"></a></li>
             </ul>
             <div class="bloc-texte">
                 <h2>Technologies</h2>
@@ -140,7 +140,7 @@
                         <li>Objectif : Créer ou moderniser un site existant en améliorant son design, son
                             accessibilité et ses performances.</li>
                     </ul>
-                    <img src="@/assets/code3.png" alt="des lignes de codes écrites">
+                    <img src="@/assets/code.png" alt="des lignes de codes écrites">
                 </article>
 
                 <article id="windows">
@@ -159,7 +159,7 @@
                         <li>Maintenance des systèmes</li>
                         <li>Installation de système Windows/Linux</li>
                     </ul>
-                    <img src="@/assets/sys.jpg" alt="image qui représente un doigt qui clique sur des applications">
+                    <img src="@/assets/sys.png" alt="image qui représente un doigt qui clique sur des applications">
                 </article>
 
                 <article id="vmware">
@@ -169,7 +169,7 @@
                         <li>Objectif : Faire tourner une machine virtuelle pour détecter des failles et tester des
                             logiciels.</li>
                     </ul>
-                    <img src="@/assets/image/oracle.png" alt="icone machine virtuel">
+                    <img src="@/assets/oracle.png" alt="icone machine virtuel">
                 </article>
 
                 <article id="rgpd">
@@ -181,7 +181,7 @@
                         <li>Veille au bonnes pratiques RGPD</li>
 
                     </ul>
-                    <img src="@/assets/image/rgpd.png" alt="un bouclier avec un cadena représente la rgpd">
+                    <img src="@/assets/rgpd.png" alt="un bouclier avec un cadena représente la rgpd">
                 </article>
             </div>
 
@@ -223,7 +223,7 @@
             <div class="contact-mail">
                 <h3>Me contacter</h3>
                 <a class="btn-rouge" href="mailto:eric.schmoelzlin@gmail.com" aria-label="Envoyer un mail">
-                    <img src="@/assets/image/Gmail.png" alt="icone d'une enveloppe gmail">
+                    <img src="@/assets/Gmail.png" alt="icone d'une enveloppe gmail">
                     <span class="libelle">Gmail</span>
 
                 </a>
@@ -231,8 +231,8 @@
 
             <div class="CV">
                 <h3>MON CV</h3>
-                <a class="btn-rouge cv-footer" href="@/assets/image/CV ES SIO.pdf" download>
-                    <img src="@/assets/image/CV.png" alt="icone d'un CV"> Télécharger
+                <a class="btn-rouge cv-footer" href="@/assets/CV ES SIO.pdf" download>
+                    <img src="@/assets/CV.png" alt="icone d'un CV"> Télécharger
                 </a>
             </div>
 
@@ -240,12 +240,12 @@
                 <h3>Réseaux</h3>
                 <a class="btn-rouge" href="https://www.linkedin.com/in/eric-schmoelzlin-824274220/" target="_blank"
                     rel="noopener" aria-label="LinkedIn">
-                    <img src="@/assets/image/linkedin.png" alt="icone bleu de linkedin" width="22" height="22">
+                    <img src="@/assets/linkedin.png" alt="icone bleu de linkedin" width="22" height="22">
                     <span class="libelle">LinkedIn</span>
                 </a>
                 <a class="btn-rouge" href="https://github.com/Amsha67" target="_blank" rel="noopener"
                     aria-label="GitHub">
-                    <img src="@/assets/image/git.png" alt="icon du chat noir de git" width="24" height="24">
+                    <img src="@/assets/git.png" alt="icon du chat noir de git" width="24" height="24">
                     <span class="libelle">GitHub</span>
                 </a>
             </div>
@@ -272,10 +272,8 @@ html {
   scroll-behavior: smooth
 }
 
-
-
-/* checkbox cachée */
-  .menuburger #hamburger {
+/* Menu burger caché en desktop */
+  .menuburger {
     display: none;
   }
 
@@ -987,16 +985,6 @@ section h3 {
 /*=============================*/
 /*=============================*/
 
-@media (prefers-reduced-motion: reduce) {
-  /* les @media permettent d'ajuster sur petit ecran */
-
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    transition: none !important
-  }
-}
 
 @media (max-width: 900px) {
 
@@ -1018,25 +1006,39 @@ section h3 {
 
   /* cache le menu desktop */
   header menu {
-    display: none !important;
+    display: none ;
   }
 
   /* checkbox cachée */
-  .menuburger #hamburger {
+   #hamburger {
     display: none;
   }
 
-  /* bouton burger (style cohérent, sans flou) */
-  #hamburger-logo {
-    display: inline-flex;
+  /* AFFICHER le menu burger sur mobile */
+ .menuburger {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;     /*  centre le bouton burger */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    z-index: 1000; /* Affiche le menu devant le reste */
+  }
+
+
+  /* bouton burger */
+
+  #hamburger-logo {
+    display: inline-flex; /* Met les 3 barres au centre du bouton */
+    align-items: center;  /* Met les 3 barres au centre du bouton */
+    justify-content: center;  /* Met les 3 barres au centre du bouton */
     width: 44px;
     height: 44px;
     font-size: 24px;
-    line-height: 1;
     color: #efe6d8;
-    background: rgba(27, 25, 27, .75); /* pas de backdrop-filter (effet de flou) */
+    background: rgba(27, 25, 27, .75);
     border: 1px solid rgba(224, 74, 46, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(224, 74, 46, .25);
@@ -1050,37 +1052,35 @@ section h3 {
     box-shadow: 0 0 14px rgba(224, 74, 46, .32);
   }
 
-  body {
-    perspective: none;
-  }
+ 
+.menuburger nav {
+  position: fixed;
+  top: 60px;
+  left: 12px;
+  right: 12px;
+  box-sizing: border-box;
 
-  .menuburger nav {
-    position: fixed;
-    top: 60px;
-    left: 12px;
-    right: 12px;
-    width: auto;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  text-align: center;      
+  gap: 10px;
+  padding: 12px 14px;
+  
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
 
-    display: flex !important;
-    flex-direction: column;
-    gap: 10px;
-    padding: 12px 14px;
+  background: rgba(27, 25, 27, .92);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
 
-    max-height: calc(100vh - 80px);
-    overflow-y: auto;
-
-    background: rgba(27, 25, 27, .92);
-    border: 1px solid rgba(255, 255, 255, .08);
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
-
-    opacity: 0;
-    transform: translateY(-8px);
-    pointer-events: none;
-    transition: opacity .22s ease, transform .22s ease;
-    z-index: 999;
-  }
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity .22s ease, transform .22s ease;
+  z-index: 999; /* assure que le menu s'affiche tjr devant le reste */
+}
 
   .menuburger nav a {
     text-decoration: none;
@@ -1102,6 +1102,10 @@ section h3 {
     pointer-events: auto;
   }
 
+/* Desactive l'animation de fond ( pour le moment inactive dans tout les cas ) */
+   body {
+    perspective: none;
+  }
 
   /* toutes les sections en colonne  */
   section {
@@ -1243,5 +1247,6 @@ section h3 {
    fr = fraction d’espace (grille)
    % = pourcentage du parent
 */
+
 
 </style>
