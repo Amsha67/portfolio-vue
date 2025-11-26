@@ -265,7 +265,12 @@ export default {
 };
 </script>
 
-<style scoped>
+
+
+
+
+<style>
+
 /* Rend le scroll fluide apres clic sur la barre des sections */
 html {
   scroll-padding-top: 120px;
