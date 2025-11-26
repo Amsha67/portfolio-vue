@@ -8,41 +8,7 @@
         <span class="pointe droite"></span>
         <span class="rosace"></span>
     </div>
-    <header>
-
-        <!-- ===== MENU BURGER (affiché seulement sur mobile) ===== -->
-        <div class="menuburger">
-            <!-- Checkbox qui sert de déclencheur -->
-            <input type="checkbox" id="hamburger">
-
-            <!-- Bouton burger -->
-            <label id="hamburger-logo" for="hamburger">☰</label>
-
-            <!-- Navigation du menu -->
-            <nav class="menu-mobile">
-                <a href="#apropos">À propos</a>
-                <a href="#technologie">Technologies</a>
-                <a href="#softskill">Soft skills</a>
-                <a href="#realisation">Réalisations</a>
-                <a href="#parcours">Parcours</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-
-
-        <menu>
-            <a href="#apropos"><button type="button">À propos</button></a>
-            <a href="#technologie"><button type="button">Technologies</button></a>
-            <a href="#softskill"><button type="button">Soft skills</button></a>
-            <a href="#realisation"><button type="button">Réalisations</button></a>
-            <a href="#parcours"><button type="button">Parcours</button></a>
-        </menu>
-
-
-
-    </header>
-
-
+    
     <main>
 
 
@@ -211,48 +177,7 @@
     </main>
 
 
-    <div class="separateur--vitrail">
-        <span class="pointe gauche"></span>
-        <span class="pointe droite"></span>
-        <span class="rosace"></span>
-    </div>
-
-    <footer class="pied">
-        <div class="pied-contenu">
-
-            <div class="contact-mail">
-                <h3>Me contacter</h3>
-                <a class="btn-rouge" href="mailto:eric.schmoelzlin@gmail.com" aria-label="Envoyer un mail">
-                    <img src="@/assets/Gmail.png" alt="icone d'une enveloppe gmail">
-                    <span class="libelle">Gmail</span>
-
-                </a>
-            </div>
-
-            <div class="CV">
-                <h3>MON CV</h3>
-                <a class="btn-rouge cv-footer" href="@/assets/CV ES SIO.pdf" download>
-                    <img src="@/assets/CV.png" alt="icone d'un CV"> Télécharger
-                </a>
-            </div>
-
-            <div class="liens-sociaux">
-                <h3>Réseaux</h3>
-                <a class="btn-rouge" href="https://www.linkedin.com/in/eric-schmoelzlin-824274220/" target="_blank"
-                    rel="noopener" aria-label="LinkedIn">
-                    <img src="@/assets/linkedin.png" alt="icone bleu de linkedin" width="22" height="22">
-                    <span class="libelle">LinkedIn</span>
-                </a>
-                <a class="btn-rouge" href="https://github.com/Amsha67" target="_blank" rel="noopener"
-                    aria-label="GitHub">
-                    <img src="@/assets/git.png" alt="icon du chat noir de git" width="24" height="24">
-                    <span class="libelle">GitHub</span>
-                </a>
-            </div>
-        </div>
-
-        <p class="credit">© 2025 — Eric Schmoelzlin</p>
-    </footer>
+    
 
 
 
@@ -270,56 +195,6 @@ export default {
 
 
 <style>
-
-/* Rend le scroll fluide apres clic sur la barre des sections */
-html {
-  scroll-padding-top: 120px;
-  scroll-behavior: smooth
-}
-
-/* Menu burger caché en desktop */
-  .menuburger {
-    display: none;
-  }
-
-/* Menu de navigation */
-/*--------------------*/
-header {
-
-  display: flex;
-  justify-content: center;
-
-}
-
-header menu {
-
-  gap: 10px;
-  margin: 0;
-  padding: 8px;
-  background: rgba(27, 25, 27, .65);     /* Effet de flou sur le fond */
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, .08);
-  border-radius: 20px;
-  display: flex;
-}
-
-
-header button {
-  color: #efe6d8;
-  background: transparent;      /* Bord fin et transparent des bouttons */
-  border: 1px solid transparent;
-  border-radius: 10px;
-  padding: 10px 16px;
-  font-weight: 700;
-}
-
-header button:hover {
-  transform: translateY(-1px);
-  background: rgba(224, 74, 46, .16);
-  border-color: rgba(239, 230, 216, .2);
-  box-shadow: 0 0 14px rgba(224, 74, 46, .32);
-}
-
 
 /* Background grille defillante */
 /*A RETRAVAILLER ACTUELLEMENT PAS FONCTIONEL*/
